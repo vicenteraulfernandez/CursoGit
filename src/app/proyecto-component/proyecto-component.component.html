@@ -1,0 +1,50 @@
+<div class="container">
+    <h1 style="text-align: center;">{{titulo}}</h1>
+    <br><br>
+    <form class="row g-4">
+  
+      <div class="col">
+  
+        <label for="nombre" >Nombre</label>
+        <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre|">
+  
+      </div>
+      <div class="col">
+  
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" [(ngModel)]="apellido" name="apellido">
+        
+      </div>
+  
+      <div class="col">
+  
+        <label for="cargo">Cargo</label>
+        <input type="text" id="cargo" [(ngModel)]="cargo" name="cargo">
+        
+      </div>
+  
+      <div class="col">
+  
+        <label for="salario">Salario</label>
+        <input type="text" id="salario" [(ngModel)]="salario" name="salario">
+        
+      </div>
+  
+     <div>
+      <button type="button" class="btn btn-success" (click)="agregarEmpleado()">
+        Agregar
+      </button>
+     </div>
+  
+  
+  
+  
+  
+  
+    </form>
+  
+  
+  </div>
+  <br>
+  <br>
+<button class="btn btn-primary" (click)="volverHome()">HOME </button>
